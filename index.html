@@ -57,35 +57,35 @@
 						<option value="">Australia</option>
 					</select> 
 					<br/>
-					<label for="avgDailyIncomeInUSD" id="avgIn"> Avg Daily Income ($):</label>
+					<label for="avgDailyIncomeInUSD" id="avgIn" aria-label="Average population Daily Income"> Avg Daily Income ($):</label>
 						<input type="number" name="avgDailyIncomeInUSD" id="avgDailyIncomeInUSD" data-avg-income required aria-required="true"> 
 					
 					<br>
-					<label for="avgPopulationIncome" id="avgPop"> AvgDaily Income By Pop. ($):
+					<label for="avgPopulationIncome" id="avgPop" aria-label="Average daily Income"> AvgDaily Income By Pop. ($):
 						<input type="number" name="avgPopulationIncome" id="avgPopulationIncome" data-avg-population-income required aria-required="true">
 					</label>
 				</fieldset>
 				<fieldset>
 					<legend>Cases & Infrastructure</legend>
-					<label for="elapse-time"> Time To Elapse
+					<label for="elapse-time" id="elapse-time-label"aria-label="Time to elapse" aria-label="Time to elapse"> Time To Elapse
 					<input type="number" name="elapse-time" id="elapse-time" data-time-to-elapse required aria-required="true">
 					</label>
-					<select name="" id="elapseTime" data-period-type>Period Type
+					<select name="" id="elapseTime" data-period-type aria-labelledby="elapse-time-label" >Period Type
 						<option value="days"> Days</option>
 						<option value="weeks"> Week(s)</option>
 						<option value="months">Month(s)</option>
 
 					</select>
 					<br>
-					<label for="reported-cases"> Reported Cases:
+					<label for="reported-cases" aria-label="reported cases"> Reported Cases:
 						<input type="text" required name="reported-cases" id="reported-cases" data-reported-cases aria-required="true">
 					</label>
 					<br>
-					<label for="population"> Population
+					<label for="population" aria-label="populations"> Population
 						<input type="number" id="population" data-population ="value" required aria-required="true">
 					</label>
 					<br>
-					<label for="total-hospital-beds"> Total Hospitals Beds:
+					<label for="total-hospital-beds" aria-label="total hospital beds"> Total Hospitals Beds:
 						<input type="number" name="total-hospital-beds" id="total-hospital-beds" data-total-hospital-beds required aria-required="true">
 					</label>
 

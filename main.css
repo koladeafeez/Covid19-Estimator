@@ -123,6 +123,8 @@ fieldset{
 legend{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    color:#ffffff;
 }
 
 footer{
